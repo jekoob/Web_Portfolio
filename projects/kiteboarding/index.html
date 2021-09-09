@@ -1,0 +1,138 @@
+<html>
+	<head>
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="mystyle.css">
+	</head>
+	<body>
+	<div id=bodyDiv>
+		<img id=helloGif src="images/hello1.webp">
+		<h2 id=headering><b>KITE</b><b>BOARDING</b></h2>
+		<img id=boardGif src="images/kiteloop.gif">
+		<div id=gallery>		
+			<img class="mySlides w3-animate-fading" src="images/kite33.png" >
+			<img class="mySlides w3-animate-fading" src="images/kite55.jpg" >
+			<img class="mySlides w3-animate-fading" src="images/kite2.png" >
+		</div>
+		<div id="wave"></div>
+	</div>
+	
+	<div id=texting>
+		<h1><u>What is kiteboarding?</u></h1>
+		<div>
+			<p>Kiteboarding, also known as kitesurfing, is a water sport that blends elements and characteristics of wakeboarding,
+			   surfing, windsurfing, snowboarding, paragliding, and skateboarding.
+			<br/>
+				Harnessed to a large hand-controlled kite and powered by the wind,
+				the kiteboarder uses a board (similar to a snowboard, wakeboard, or skateboard) to ride and glide across the water.
+			
+			<br/>
+				Kiteboarders are only able to <a href="https://www.surfertoday.com/kiteboarding/how-does-a-kite-fly">fly their kites</a> through an imaginary <a href="https://www.surfertoday.com/kiteboarding/how-to-use-the-wind-window-in-kiteboarding">wind window.</a>
+				Unlike in windsurfing and other sailing disciplines, kiteboarders need minimum wind speed to get their wings up in the sky.
+			</p>
+			<img id=kite5 src="images/kite5.png">
+			<p>
+				The sport of kiteboarding has its roots in the south of France.
+
+				Between the late 1970s and early 1980s, brothers Dominique and Bruno Legaignoux started testing the use of a dual-line kite in water skiing.
+
+				They got the inspiration from the "Jacob's Ladder" catamaran and its stacked Flexifoil kites and from the Birdsail, a kind of mini hang-glider that replaced the windsurf sail.
+
+				In the early 1990s, and after a few years of research, development, and testing, Oregon's Cory Roeseler and his dad founded KiteSki.
+
+				The company developed an eye-catching patent-protected kite sports bundle that included a kite, board, and a reel bar.
+			</p>
+			<p>The early kiteboarding prototypes caught the attention of a few action sports enthusiasts in Maui, the windy Hawaiian island.
+
+			Joe Koehl, Robby Naish, Don Montague, Laid Hamilton, Emmanuel Bertin, and others helped improve the technical aspects of kitesurfing and gave notoriety it never had.
+
+			The first-ever kiteboarding competition was held in September 1998 in Maui and attracted 22 athletes.
+
+			The winner was Marcus "Flash" Austin.</p>
+			<h1 id=head2><u>A Fast-Growing Water Sport</u></h1>
+			<p>
+				Kiteboarding has evolved a lot in its first three decades of existence. The outdoor activity is now performed in the water, but also on land.
+				<br/>
+				Over the years, the sport was divided into several disciplines - wave riding, freestyle, slalom/course, speed, big air, wake park riding, kite buggying, and kite landboarding.
+				<br/>
+				The sport has already developed an extensive list of <a href="https://www.surfertoday.com/kiteboarding/the-official-freestyle-kiteboarding-tricks">tricks and maneuvers.</a>
+
+				Some of them were inspired by surfing, windsurfing, wakeboarding, and skateboarding, but kite enthusiasts have already created their own original moves.
+
+				<a href="https://www.surfertoday.com/kiteboarding/the-most-common-types-of-kiteboarding-kites">There are various types of kiteboarding kites</a>, different <a href="https://www.surfertoday.com/kiteboarding/the-different-types-of-kiteboards">types of boards</a>, and multiple combinations for each riding style and situation.
+
+			</p>
+		</div>
+				<div id=left_li>
+				<p>The most common types of kites are :</p>
+				<ul>
+					<li>inflatable kites (C-Kite, Bow Kite, Delta Kite, Hybrid Kite)</li>
+					<li> foil kites.</li>
+				</ul>
+				</div>
+				<div id=right_li>
+					<p>The most popular kiteboard models are :</p>
+					<ul>
+						<li> twin-tip boards</li>
+						<li>wake-style boards</li>
+						<li>race boards</li>
+						<li>wave boards</li>
+						<li>foil boards</li>
+					</ul>
+				</div>
+			<div style=margin-top:250px;>
+				<p style=display:inline-block ;float:right; >In the first decade of the 21st century, kiteboarding became the fastest-growing sport in the world.
+
+				<br/>Unfortunately, in its early years, hundreds of accidents caused dozens of deaths due to equipment failure and inadequate mechanisms.
+
+				The good news is that from 2010, the world's leading kiteboarding brands dramatically improved their safety standards, and the number of injuries and fatal accidents dropped exponentially.
+
+				Today, the sport of kiteboarding rides under the flag of World Sailing, and it has an estimated number of 1,5 million participants worldwide.
+
+				Three organizations run the main pro kiteboarding world tours: Global Kitesports Association (freestyle, and wave and strapless), the Kite Park League (wake-style kiteboarding), and the International Kiteboarding Association (slalom/course racing).
+				</p>
+				<iframe width="420" height="345" src="https://www.youtube.com/embed/l5DCarnrj0s"></iframe>
+		   </div>
+	</div>
+	
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 10000); 
+}
+let count = 0;
+
+document.getElementById("bodyDiv").onscroll= function(){	
+document.getElementById("wave").remove();
+};
+	
+	
+/*bodyEl.addEventListener("scroll", function (){
+	if(count===0){
+	let imageEl=document.getElementById("wave");
+	imageEl.remove();
+	imageEl=document.getElementById("gallery");
+		imageEl.remove();
+		count++;
+		document.getElementById("bodyDiv").style.paddingTop="100px";
+		document.getElementById("bodyDiv").style.overflow="hidden";
+		document.getElementById("texting").style.overflow="scroll";
+		document.getElementById("texting").style.height="100%";
+		
+	}
+	
+});*/
+
+</script>
+	</body>
+</html>

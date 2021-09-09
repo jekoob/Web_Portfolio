@@ -1,0 +1,36 @@
+@import "main";
+main h1 {
+  font-size: 2rem;
+}
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+
+  & div {
+    width: 100%;
+    border: black solid 2px;
+    font-size: 2rem;
+    padding: 0rem 0rem;
+    margin-bottom: 3rem;
+    @include easeOut();
+
+    &:hover {
+      padding: 0.5rem 1.5rem;
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      span {
+        color: set-text-color($secondary-color);
+      }
+    }
+    &#mail {
+      font-size: 1rem;
+    }
+
+    &#phone {
+      font-size: 1rem;
+    }
+  }
+}
