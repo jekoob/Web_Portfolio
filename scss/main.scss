@@ -4,7 +4,9 @@
 * {
   box-sizing: border-box;
 }
-
+html {
+  height: 100%;
+}
 body {
   @include background();
   background: $primary-color;
@@ -105,5 +107,15 @@ main {
     text-shadow: 2px 2px 2px black;
   }
 }
-
+footer {
+  &#bottom_menu {
+    display: block;
+    background-color: #000;
+    z-index: 1;
+    position: fixed;
+    clear: both;
+    width: 100%;
+    top: 95%;
+  }
+}
 @import "mobile";
