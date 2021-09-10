@@ -217,6 +217,7 @@ header {
 main {
   padding: 2.8rem;
   height: 100%;
+  overflow:hiddwen;
 }
 main .icons a {
   padding: 0.4rem;
