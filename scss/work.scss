@@ -1,7 +1,10 @@
 @import "main";
 
 body#bg-img {
-  background-image: url(../img/project.jpg);
+  background-image: url(../img/Project.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 .projects {
