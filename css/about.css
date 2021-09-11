@@ -126,6 +126,7 @@ html {
 }
 
 body {
+  overflow: scroll;
   background: #444;
   color: #fff;
   height: 100%;
